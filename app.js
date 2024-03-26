@@ -3,15 +3,16 @@ const passport = require('passport');
 const session = require('express-session');
 const LocalStrategy = require('passport-local').Strategy;
 const mysql = require('mysql');
+const bcrypt = require('bcrypt');
 const path = require('path');
 const app = express();
 
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'DB Admin',
-    password: 'Adminpassword',
-    database: 'passport_js_test'
+    user: 'xxxxxx',
+    password: 'xxxxxxxx',
+    database: 'xxxxxxxxx'
 });
 
 connection.connect();
